@@ -1,0 +1,11 @@
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\bin\Debug\net9.0\Model.deps.json
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\bin\Debug\net9.0\Model.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\bin\Debug\net9.0\Model.pdb
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.AssemblyInfoInputs.cache
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.AssemblyInfo.cs
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\refint\Model.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.pdb
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\ref\Model.dll
