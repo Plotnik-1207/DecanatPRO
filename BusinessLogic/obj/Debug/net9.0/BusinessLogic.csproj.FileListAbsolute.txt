@@ -13,3 +13,4 @@ C:\Users\Plotnik\source\repos\DecanatPRO\BusinessLogic\obj\Debug\net9.0\Business
 C:\Users\Plotnik\source\repos\DecanatPRO\BusinessLogic\obj\Debug\net9.0\refint\BusinessLogic.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\BusinessLogic\obj\Debug\net9.0\BusinessLogic.pdb
 C:\Users\Plotnik\source\repos\DecanatPRO\BusinessLogic\obj\Debug\net9.0\ref\BusinessLogic.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\BusinessLogic\obj\Debug\net9.0\BusinessLogic.sourcelink.json

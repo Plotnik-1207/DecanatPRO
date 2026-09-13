@@ -16,10 +16,12 @@ namespace BusinessLogic
         public Dictionary<string, int> GetSpecialityDistribution()
         {
             Dictionary<string, int> specialityDistribution = new Dictionary<string, int>();
+
             foreach (var item in specialities)
             {
                 specialityDistribution[item] = students.Count(s => s.Speciality == item);
             }
+
             return specialityDistribution;
         }
 
