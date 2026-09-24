@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|c:\\users\\plotnik\\source\\repos\\decanatpro\\winformview\\studenthistogramform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|solutionrelative:winformview\\studenthistogramform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|c:\\users\\plotnik\\source\\repos\\decanatpro\\winformview\\studenthistogramform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|solutionrelative:winformview\\studenthistogramform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|c:\\users\\plotnik\\source\\repos\\decanatpro\\winformview\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|solutionrelative:winformview\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\winformview\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70BC43E4-77B2-448F-9218-DDF1AB54D24F}|WinFormView\\WinFormView.csproj|solutionrelative:winformview\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{33A8A419-8826-4323-8F03-458F31EB1DD5}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\plotnik\\source\\repos\\decanatpro\\dataaccesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33A8A419-8826-4323-8F03-458F31EB1DD5}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8614D8F6-1115-4511-99FD-EE7501518DF2}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\plotnik\\source\\repos\\decanatpro\\businesslogic\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,69 +27,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentHistogramForm.cs",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\StudentHistogramForm.cs",
-              "RelativeDocumentMoniker": "WinFormView\\StudentHistogramForm.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\StudentHistogramForm.cs",
-              "RelativeToolTip": "WinFormView\\StudentHistogramForm.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCgAAABmAAAAAAAAAA==",
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Class1.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Class1.cs",
+              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Class1.cs",
+              "RelativeToolTip": "DataAccessLayer\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T12:00:01.267Z",
+              "WhenOpened": "2026-09-24T09:39:03.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StudentHistogramForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\StudentHistogramForm.cs",
-              "RelativeDocumentMoniker": "WinFormView\\StudentHistogramForm.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\StudentHistogramForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "WinFormView\\StudentHistogramForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:54:05.934Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\MainForm.cs",
-              "RelativeDocumentMoniker": "WinFormView\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\MainForm.cs",
-              "RelativeToolTip": "WinFormView\\MainForm.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAASwD4AAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T02:51:41.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\MainForm.cs",
-              "RelativeDocumentMoniker": "WinFormView\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "WinFormView\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:24:07.208Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Logic.cs",
               "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\BusinessLogic\\Logic.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Logic.cs",
               "ToolTip": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\BusinessLogic\\Logic.cs",
               "RelativeToolTip": "BusinessLogic\\Logic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T11:08:23.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-10T11:08:23.315Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\Model\\Student.cs",
               "RelativeDocumentMoniker": "Model\\Student.cs",
@@ -109,8 +59,7 @@
               "RelativeToolTip": "Model\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T10:31:06.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T10:31:06.484Z"
             }
           ]
         }
