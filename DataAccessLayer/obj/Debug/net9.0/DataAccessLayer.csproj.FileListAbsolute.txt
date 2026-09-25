@@ -1,0 +1,6 @@
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.sourcelink.json
