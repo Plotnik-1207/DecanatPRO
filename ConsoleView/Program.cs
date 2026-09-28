@@ -6,9 +6,9 @@ string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
                           "AttachDbFilename=C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Database.mdf;" +
                           "Integrated Security=True";
 
-var logic = new Logic(new EntityStudentRepository(new DataContext()));
+//var logic = new Logic(new EntityStudentRepository(new DataContext()));
 
-//var logic = new Logic(new StudentDapperRepository(connectionString));
+var logic = new Logic(new StudentDapperRepository(connectionString));
 
 static int ReadUserChoice(int minValue, int maxValue)
 {

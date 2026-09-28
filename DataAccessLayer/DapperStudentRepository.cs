@@ -18,6 +18,10 @@ namespace DataAccessLayer
             _connectionString = connectionString;
         }
 
+        /// <summary>
+        /// Добавить студента в базу
+        /// </summary>
+        /// <param name="item">Студент для добавления</param>
         public void Create(Student item)
         {
             using var connection = new SqlConnection(_connectionString);
@@ -26,12 +30,19 @@ namespace DataAccessLayer
                 item);
         }
 
+        /// <summary>
+        /// Получить список студентов из базы
+        /// </summary>
         public IEnumerable<Student> ReadAll()
         {
             using var connection = new SqlConnection(_connectionString);
             return connection.Query<Student>("SELECT * FROM Students");
         }
 
+        /// <summary>
+        /// Найти студента в базе по id
+        /// </summary>
+        /// <param name="id">Id студента для нахождения</param>
         public Student ReadById(int id)
         {
             using var connection = new SqlConnection(_connectionString);
@@ -39,6 +50,10 @@ namespace DataAccessLayer
                 "SELECT * FROM Students WHERE Id = @Id", new { Id = id });
         }
 
+        /// <summary>
+        /// Удалить студента из базы
+        /// </summary>
+        /// <param name="id">Id студента для удаления</param>
         public void Delete(int id)
         {
             using var connection = new SqlConnection(_connectionString);

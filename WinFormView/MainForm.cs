@@ -1,8 +1,5 @@
 using BusinessLogic;
-<<<<<<< Updated upstream
 using DataAccessLayer;
-=======
->>>>>>> Stashed changes
 using Model;
 
 namespace WinFormView
@@ -13,9 +10,9 @@ namespace WinFormView
                                   "AttachDbFilename=C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Database.mdf;" +
                                   "Integrated Security=True";
 
-        Logic logic = new Logic(new EntityStudentRepository(new DataContext()));
+        //Logic logic = new Logic(new EntityStudentRepository(new DataContext()));
 
-        //Logic logic = new Logic(new StudentDapperRepository(connectionString));
+        Logic logic = new Logic(new StudentDapperRepository(connectionString));
 
         public MainForm()
         {
@@ -61,13 +58,7 @@ namespace WinFormView
 
             DataGridViewRow row = StudentDataGrid.SelectedRows[0];
 
-<<<<<<< Updated upstream
             int id = Convert.ToInt32(row.Cells["Id"].Value?.ToString());
-=======
-            string? name = row.Cells["Name"].Value?.ToString();
-            string? speciality = row.Cells["Speciality"].Value?.ToString();
-            string? group = row.Cells["Group"].Value?.ToString();
->>>>>>> Stashed changes
 
             logic.DeleteStudent(id);
 

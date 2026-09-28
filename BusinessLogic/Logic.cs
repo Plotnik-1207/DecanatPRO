@@ -13,12 +13,17 @@ namespace BusinessLogic
             _repository = repository;
         }
 
-
+        /// <summary>
+        /// Получить список студентов
+        /// </summary>
         public IReadOnlyList<Student> GetStudents()
         {
             return _repository.ReadAll().ToList();
         }
 
+        /// <summary>
+        /// Получить распределение студентов по специальностям
+        /// </summary>
         public Dictionary<string, int> GetSpecialityDistribution()
         {
             var students = _repository.ReadAll().ToList();
@@ -29,6 +34,9 @@ namespace BusinessLogic
                                             speciality => students.Count(s => s.Speciality == speciality));
         }
 
+        /// <summary>
+        /// Добавить студента
+        /// </summary>
         public void AddStudent(string? name, string? speciality, string? group)
         {
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(speciality) || string.IsNullOrEmpty(group))
@@ -37,24 +45,12 @@ namespace BusinessLogic
             _repository.Create(new Student { Name = name, Speciality = speciality, Group = group });
         }
 
+        /// <summary>
+        /// Удалить студента
+        /// </summary>
         public void DeleteStudent(int id)
         {
             _repository.Delete(id);
-        }
-        public void DeleteStudent(string? name, string? speciality, string? group)
-        {
-            if (name == null || speciality == null || group == null || name == "" || speciality == "" || group == "")
-                return;
-
-            var students = _repository.ReadAll().ToList();
-
-            var studentToRemove = students.Find(s => s.Name == name &&
-                                                s.Speciality == speciality &&
-                                                s.Group == group);
-            if (studentToRemove != null)
-            {
-                students.Remove(studentToRemove);
-            }
         }
     }
 }
