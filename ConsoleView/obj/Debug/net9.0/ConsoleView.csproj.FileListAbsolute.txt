@@ -19,6 +19,7 @@ C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\Model.pdb
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\obj\Debug\net9.0\ConsoleView.csproj.AssemblyReference.cache
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\obj\Debug\net9.0\ConsoleV.40BA7453.Up2Date
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\obj\Debug\net9.0\ConsoleView.sourcelink.json
+<<<<<<< Updated upstream
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\Dapper.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\EntityFramework.SqlServer.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\EntityFramework.dll
@@ -53,3 +54,5 @@ C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\Microsoft.
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\ConsoleView\bin\Debug\net9.0\MySqlConnector.dll
+=======
+>>>>>>> Stashed changes

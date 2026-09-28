@@ -10,4 +10,8 @@ C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\refint\Model.dll
 C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.pdb
 C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\ref\Model.dll
+<<<<<<< Updated upstream
 C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.csproj.Up2Date
+=======
+C:\Users\Plotnik\source\repos\DecanatPRO\Model\obj\Debug\net9.0\Model.sourcelink.json
+>>>>>>> Stashed changes
