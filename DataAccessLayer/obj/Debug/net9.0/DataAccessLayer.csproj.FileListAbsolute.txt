@@ -4,3 +4,15 @@ C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAc
 C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.AssemblyInfo.cs
 C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.sourcelink.json
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.deps.json
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.runtimeconfig.json
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\bin\Debug\net9.0\DataAccessLayer.pdb
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\bin\Debug\net9.0\Model.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\bin\Debug\net9.0\Model.pdb
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAcce.E67BD773.Up2Date
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\refint\DataAccessLayer.dll
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.pdb
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\Plotnik\source\repos\DecanatPRO\DataAccessLayer\obj\Debug\net9.0\ref\DataAccessLayer.dll

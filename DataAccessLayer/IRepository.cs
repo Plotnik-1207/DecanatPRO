@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model;
 
 namespace DataAccessLayer
 {
@@ -14,6 +15,6 @@ namespace DataAccessLayer
 
         T ReadById (int id);
 
-        void Delete (T obj);
+        void Delete (int id);
     }
 }

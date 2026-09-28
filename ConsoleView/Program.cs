@@ -1,6 +1,14 @@
 ﻿using BusinessLogic;
+using DataAccessLayer;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-Logic Logic = new Logic();
+string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
+                          "AttachDbFilename=C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Database.mdf;" +
+                          "Integrated Security=True";
+
+var logic = new Logic(new EntityStudentRepository(new DataContext()));
+
+//var logic = new Logic(new StudentDapperRepository(connectionString));
 
 static int ReadUserChoice(int minValue, int maxValue)
 {
@@ -36,23 +44,23 @@ static (string name, string speciality, string group) ReadStudent()
 
 void PrintStudents()
 {
-    var students = Logic.GetStudents();
+    var students = logic.GetStudents();
 
-    Console.WriteLine("┌────────────────────────────┬──────────────────┬────────────┐");
-    Console.WriteLine("│ ФИО                        │ Специальность    │ Группа     │");
-    Console.WriteLine("├────────────────────────────┼──────────────────┼────────────┤");
+    Console.WriteLine("┌──────┬────────────────────────────┬──────────────────┬────────────┐");
+    Console.WriteLine("│ Id   │ ФИО                        │ Специальность    │ Группа     │");
+    Console.WriteLine("├──────┼────────────────────────────┼──────────────────┼────────────┤");
 
     foreach (var s in students)
     {
-        Console.WriteLine($"│ {s.Name,-26} │ {s.Speciality,-16} │ {s.Group,-10} │");
+        Console.WriteLine($"│ {s.Id,-4} │ {s.Name,-26} │ {s.Speciality,-16} │ {s.Group,-10} │");
     }
 
-    Console.WriteLine("└────────────────────────────┴──────────────────┴────────────┘");
+    Console.WriteLine("└──────┴────────────────────────────┴──────────────────┴────────────┘");
 }
 
 void PrintHistogram()
 {
-    var distribution = Logic.GetSpecialityDistribution();
+    var distribution = logic.GetSpecialityDistribution();
 
     if (distribution.Count == 0)
     {
@@ -99,13 +107,14 @@ while (true)
         case 1:
             {
                 var (name, speciality, group) = ReadStudent();
-                Logic.AddStudent(name, speciality, group);
+                logic.AddStudent(name, speciality, group);
                 break;
             }
         case 2:
             {
-                var (name, speciality, group) = ReadStudent();
-                Logic.DeleteStudent(name, speciality, group);
+                Console.WriteLine("Введите Id студента:");
+                int id = Convert.ToInt32(Console.ReadLine());
+                logic.DeleteStudent(id);
                 break;
             }
         case 3:

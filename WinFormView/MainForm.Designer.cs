@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             StudentDataGrid = new DataGridView();
-            NameColumn = new DataGridViewTextBoxColumn();
-            SpecialityColumn = new DataGridViewTextBoxColumn();
-            GroupColumn = new DataGridViewTextBoxColumn();
             AddStudentButton = new Button();
             DeleteStudentButton = new Button();
             ShowSpecialityDistributionButton = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
+            Id = new DataGridViewTextBoxColumn();
+            NameColumn = new DataGridViewTextBoxColumn();
+            SpecialityColumn = new DataGridViewTextBoxColumn();
+            GroupColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)StudentDataGrid).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -47,7 +48,7 @@
             StudentDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             StudentDataGrid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             StudentDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            StudentDataGrid.Columns.AddRange(new DataGridViewColumn[] { NameColumn, SpecialityColumn, GroupColumn });
+            StudentDataGrid.Columns.AddRange(new DataGridViewColumn[] { Id, NameColumn, SpecialityColumn, GroupColumn });
             StudentDataGrid.Location = new Point(12, 12);
             StudentDataGrid.MultiSelect = false;
             StudentDataGrid.Name = "StudentDataGrid";
@@ -56,30 +57,7 @@
             StudentDataGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             StudentDataGrid.Size = new Size(707, 400);
             StudentDataGrid.TabIndex = 0;
-            // 
-            // NameColumn
-            // 
-            NameColumn.DataPropertyName = "Name";
-            NameColumn.HeaderText = "ФИО";
-            NameColumn.MinimumWidth = 6;
-            NameColumn.Name = "NameColumn";
-            NameColumn.ReadOnly = true;
-            // 
-            // SpecialityColumn
-            // 
-            SpecialityColumn.DataPropertyName = "Speciality";
-            SpecialityColumn.HeaderText = "Специальность";
-            SpecialityColumn.MinimumWidth = 6;
-            SpecialityColumn.Name = "SpecialityColumn";
-            SpecialityColumn.ReadOnly = true;
-            // 
-            // GroupColumn
-            // 
-            GroupColumn.DataPropertyName = "Group";
-            GroupColumn.HeaderText = "Группа";
-            GroupColumn.MinimumWidth = 6;
-            GroupColumn.Name = "GroupColumn";
-            GroupColumn.ReadOnly = true;
+            StudentDataGrid.CellContentClick += StudentDataGrid_CellContentClick;
             // 
             // AddStudentButton
             // 
@@ -131,6 +109,38 @@
             tableLayoutPanel1.Size = new Size(707, 35);
             tableLayoutPanel1.TabIndex = 5;
             // 
+            // Id
+            // 
+            Id.DataPropertyName = "Id";
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.ReadOnly = true;
+            // 
+            // NameColumn
+            // 
+            NameColumn.DataPropertyName = "Name";
+            NameColumn.HeaderText = "ФИО";
+            NameColumn.MinimumWidth = 6;
+            NameColumn.Name = "NameColumn";
+            NameColumn.ReadOnly = true;
+            // 
+            // SpecialityColumn
+            // 
+            SpecialityColumn.DataPropertyName = "Speciality";
+            SpecialityColumn.HeaderText = "Специальность";
+            SpecialityColumn.MinimumWidth = 6;
+            SpecialityColumn.Name = "SpecialityColumn";
+            SpecialityColumn.ReadOnly = true;
+            // 
+            // GroupColumn
+            // 
+            GroupColumn.DataPropertyName = "Group";
+            GroupColumn.HeaderText = "Группа";
+            GroupColumn.MinimumWidth = 6;
+            GroupColumn.Name = "GroupColumn";
+            GroupColumn.ReadOnly = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -157,6 +167,7 @@
         private Button DeleteStudentButton;
         private Button ShowSpecialityDistributionButton;
         private TableLayoutPanel tableLayoutPanel1;
+        private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn NameColumn;
         private DataGridViewTextBoxColumn SpecialityColumn;
         private DataGridViewTextBoxColumn GroupColumn;

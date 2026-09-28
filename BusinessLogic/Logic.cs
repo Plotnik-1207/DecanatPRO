@@ -1,51 +1,45 @@
-﻿using Model;
+﻿using DataAccessLayer;
+using Model;
+using System.Xml.Linq;
 
 namespace BusinessLogic
 {
     public class Logic
     {
-        private List<Student> students = new List<Student>();
+        private readonly IRepository<Student> _repository;
 
-        private List<string> specialities = new List<string>();
+        public Logic(IRepository<Student> repository)
+        {
+            _repository = repository;
+        }
+
 
         public IReadOnlyList<Student> GetStudents()
         {
-            return students.ToList();
+            return _repository.ReadAll().ToList();
         }
 
         public Dictionary<string, int> GetSpecialityDistribution()
         {
-            Dictionary<string, int> specialityDistribution = new Dictionary<string, int>();
+            var students = _repository.ReadAll().ToList();
+            var specialities = students.Select(s => s.Speciality).Distinct();
 
-            foreach (var item in specialities)
-            {
-                specialityDistribution[item] = students.Count(s => s.Speciality == item);
-            }
-
-            return specialityDistribution;
+            return specialities.ToDictionary(
+                                            speciality => speciality,
+                                            speciality => students.Count(s => s.Speciality == speciality));
         }
 
         public void AddStudent(string? name, string? speciality, string? group)
         {
-            if (name == null || speciality == null || group == null || name == "" || speciality == "" || group == "")
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(speciality) || string.IsNullOrEmpty(group))
                 return;
-            Student newStudent = new Student { Name = name, Speciality = speciality, Group = group };
-            students.Add(newStudent);
-            if (!specialities.Contains(speciality))
-            {
-                specialities.Add(speciality);
-            }
+
+            _repository.Create(new Student { Name = name, Speciality = speciality, Group = group });
         }
 
-        public void DeleteStudent(string name, string speciality, string group)
+        public void DeleteStudent(int id)
         {
-            var studentToRemove = students.Find(s => s.Name == name &&
-                                                s.Speciality == speciality &&
-                                                s.Group == group);
-            if (studentToRemove != null)
-            {
-                students.Remove(studentToRemove);
-            }
+            _repository.Delete(id);
         }
     }
 }

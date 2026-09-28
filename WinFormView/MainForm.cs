@@ -1,10 +1,19 @@
 using BusinessLogic;
+using DataAccessLayer;
+using Model;
 
 namespace WinFormView
 {
     public partial class MainForm : Form
     {
-        private Logic logic = new Logic();
+        static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
+                                  "AttachDbFilename=C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Database.mdf;" +
+                                  "Integrated Security=True";
+
+        Logic logic = new Logic(new EntityStudentRepository(new DataContext()));
+
+        //Logic logic = new Logic(new StudentDapperRepository(connectionString));
+
         public MainForm()
         {
             InitializeComponent();
@@ -27,9 +36,9 @@ namespace WinFormView
             {
                 if (addStudentForm.ShowDialog() == DialogResult.OK)
                 {
-                    string name = addStudentForm.StudentName;
-                    string speciality = addStudentForm.Speciality;
-                    string group = addStudentForm.Group;
+                    string? name = addStudentForm.StudentName;
+                    string? speciality = addStudentForm.Speciality;
+                    string? group = addStudentForm.Group;
 
                     logic.AddStudent(name, speciality, group);
 
@@ -49,11 +58,9 @@ namespace WinFormView
 
             DataGridViewRow row = StudentDataGrid.SelectedRows[0];
 
-            string name = row.Cells["Name"].Value?.ToString();
-            string speciality = row.Cells["Speciality"].Value?.ToString();
-            string group = row.Cells["Group"].Value?.ToString();
+            int id = Convert.ToInt32(row.Cells["Id"].Value?.ToString());
 
-            logic.DeleteStudent(name, speciality, group);
+            logic.DeleteStudent(id);
 
             RefreshStudentDataGrid();
         }
@@ -65,6 +72,11 @@ namespace WinFormView
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

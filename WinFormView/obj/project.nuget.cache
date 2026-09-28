@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qgJ2tM3+QYo=",
+  "dgSpecHash": "5MStsp3k+zY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\WinFormView.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,20 @@
     "C:\\Users\\Plotnik\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.1.1\\harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0\\microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.0\\microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.0\\microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0\\microsoft.extensions.logging.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0\\microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.options\\9.0.0\\microsoft.extensions.options.9.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Plotnik\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
     "C:\\Users\\Plotnik\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
@@ -41,15 +53,6 @@
   ],
   "logs": [
     {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Произошла ошибка при получении данных уязвимости пакета: Не удалось загрузить индекс служб для источника https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\WinFormView.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\WinFormView.csproj",
-      "targetGraphs": []
-    },
-    {
       "code": "NU1701",
       "level": "Warning",
       "message": "Пакет \"OpenTK 3.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net9.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
@@ -58,7 +61,7 @@
       "filePath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\WinFormView.csproj",
       "libraryId": "OpenTK",
       "targetGraphs": [
-        "net9.0-windows7.0"
+        "net9.0-windows"
       ]
     },
     {
@@ -70,7 +73,7 @@
       "filePath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\WinFormView.csproj",
       "libraryId": "OpenTK.GLControl",
       "targetGraphs": [
-        "net9.0-windows7.0"
+        "net9.0-windows"
       ]
     },
     {
@@ -82,7 +85,7 @@
       "filePath": "C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\WinFormView\\WinFormView.csproj",
       "libraryId": "SkiaSharp.Views.WindowsForms",
       "targetGraphs": [
-        "net9.0-windows7.0"
+        "net9.0-windows"
       ]
     }
   ]
