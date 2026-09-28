@@ -37,15 +37,16 @@ namespace BusinessLogic
             _repository.Create(new Student { Name = name, Speciality = speciality, Group = group });
         }
 
-<<<<<<< Updated upstream
         public void DeleteStudent(int id)
         {
             _repository.Delete(id);
-=======
+        }
         public void DeleteStudent(string? name, string? speciality, string? group)
         {
             if (name == null || speciality == null || group == null || name == "" || speciality == "" || group == "")
                 return;
+
+            var students = _repository.ReadAll().ToList();
 
             var studentToRemove = students.Find(s => s.Name == name &&
                                                 s.Speciality == speciality &&
@@ -54,7 +55,6 @@ namespace BusinessLogic
             {
                 students.Remove(studentToRemove);
             }
->>>>>>> Stashed changes
         }
     }
 }
