@@ -1,14 +1,10 @@
 ﻿using BusinessLogic;
 using DataAccessLayer;
+using Ninject;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
-                          "AttachDbFilename=C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Database.mdf;" +
-                          "Integrated Security=True";
-
-//var logic = new Logic(new EntityStudentRepository(new DataContext()));
-
-var logic = new Logic(new StudentDapperRepository(connectionString));
+IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
+var logic = ninjectKernel.Get<Logic>();
 
 static int ReadUserChoice(int minValue, int maxValue)
 {

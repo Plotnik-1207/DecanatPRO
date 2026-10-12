@@ -1,22 +1,20 @@
 using BusinessLogic;
 using DataAccessLayer;
 using Model;
+using Ninject;
 
 namespace WinFormView
 {
     public partial class MainForm : Form
     {
-        static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
-                                  "AttachDbFilename=C:\\Users\\Plotnik\\source\\repos\\DecanatPRO\\DataAccessLayer\\Database.mdf;" +
-                                  "Integrated Security=True";
-
-        //Logic logic = new Logic(new EntityStudentRepository(new DataContext()));
-
-        Logic logic = new Logic(new StudentDapperRepository(connectionString));
+        private Logic logic;
 
         public MainForm()
         {
             InitializeComponent();
+
+            IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<Logic>();
 
             StudentDataGrid.DataSource = logic.GetStudents();
         }
